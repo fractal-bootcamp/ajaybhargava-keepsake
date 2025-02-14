@@ -24,7 +24,7 @@ export function meta({}: Route.MetaArgs) {
 	];
 }
 
-export default function Bouncer({ loaderData }: Route.ComponentProps) {
+export default function Bouncer() {
 	return (
 		<>
 			<div className="flex flex-col items-center gap-4">
