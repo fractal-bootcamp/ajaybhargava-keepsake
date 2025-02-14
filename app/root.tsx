@@ -60,15 +60,8 @@ export default function App({ loaderData }: Route.ComponentProps) {
 			signUpFallbackRedirectUrl="/"
 			signInFallbackRedirectUrl="/"
 		>
-			<header className="flex items-center justify-center py-8 px-4">
-				<SignedOut>
-					<SignInButton />
-				</SignedOut>
-				<SignedIn>
-					<UserButton />
-				</SignedIn>
-			</header>
-			<main>
+			<header className="flex items-center justify-center py-8 px-4" />
+			<main className="max-w-screen-md mx-auto">
 				<Outlet />
 			</main>
 		</ClerkProvider>
