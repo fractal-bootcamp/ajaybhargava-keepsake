@@ -4,6 +4,7 @@ import { getAuth } from "@clerk/react-router/ssr.server";
 import { redirect, useLoaderData } from "react-router";
 import { Keepsake } from "../../components/keepsake";
 import type { LoaderData } from "../../types/user";
+
 export async function loader(args: Route.LoaderArgs) {
 	const { userId } = await getAuth(args);
 
