@@ -55,11 +55,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App({ loaderData }: Route.ComponentProps) {
 	return (
-		<ClerkProvider
-			loaderData={loaderData}
-			signUpFallbackRedirectUrl="/"
-			signInFallbackRedirectUrl="/"
-		>
+		<ClerkProvider loaderData={loaderData}>
 			<header className="flex items-center justify-center py-8 px-4" />
 			<main className="relative border p-8 max-w-screen-md w-full mx-auto">
 				<div className="absolute top-4 right-4">
